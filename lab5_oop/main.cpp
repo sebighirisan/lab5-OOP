@@ -7,9 +7,12 @@
 //
 
 #include <iostream>
+#include "UserInterface.h"
+#include "Tests.h"
+int main() {
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    std::cout << "Hello, Lab5!" << std::endl;
+    Teste();
+    UI();
     return 0;
 }

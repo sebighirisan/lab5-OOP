@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1C004E9E2451E514002200B2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C004E9D2451E514002200B2 /* main.cpp */; };
+		1C004EA62451E5A2002200B2 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C004EA42451E5A2002200B2 /* User.cpp */; };
+		1C004ECE24571F0F002200B2 /* Administrator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C004EC824571F0F002200B2 /* Administrator.cpp */; };
+		1C004ED424571FBF002200B2 /* Tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C004ED024571FBF002200B2 /* Tests.cpp */; };
+		1C004ED524571FBF002200B2 /* UserInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C004ED124571FBF002200B2 /* UserInterface.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,17 @@
 /* Begin PBXFileReference section */
 		1C004E9A2451E514002200B2 /* lab5_oop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab5_oop; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C004E9D2451E514002200B2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1C004EA42451E5A2002200B2 /* User.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
+		1C004EA52451E5A2002200B2 /* User.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = User.hpp; sourceTree = "<group>"; };
+		1C004EA82455A40E002200B2 /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		1C004EC824571F0F002200B2 /* Administrator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Administrator.cpp; path = "../../../Downloads/archive-4/Administrator.cpp"; sourceTree = "<group>"; };
+		1C004ECA24571F0F002200B2 /* Administrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Administrator.h; path = "../../../Downloads/archive-4/Administrator.h"; sourceTree = "<group>"; };
+		1C004ECB24571F0F002200B2 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "../../../Downloads/archive-4/CMakeLists.txt"; sourceTree = "<group>"; };
+		1C004ECD24571F0F002200B2 /* Film.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Film.h; path = "../../../Downloads/archive-4/Film.h"; sourceTree = "<group>"; };
+		1C004ED024571FBF002200B2 /* Tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tests.cpp; path = ../../../Downloads/OOP_Lab5/Tests.cpp; sourceTree = "<group>"; };
+		1C004ED124571FBF002200B2 /* UserInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UserInterface.cpp; path = ../../../Downloads/OOP_Lab5/UserInterface.cpp; sourceTree = "<group>"; };
+		1C004ED224571FBF002200B2 /* UserInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInterface.h; path = ../../../Downloads/OOP_Lab5/UserInterface.h; sourceTree = "<group>"; };
+		1C004ED324571FBF002200B2 /* Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tests.h; path = ../../../Downloads/OOP_Lab5/Tests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +72,18 @@
 		1C004E9C2451E514002200B2 /* lab5_oop */ = {
 			isa = PBXGroup;
 			children = (
+				1C004ED024571FBF002200B2 /* Tests.cpp */,
+				1C004ED324571FBF002200B2 /* Tests.h */,
+				1C004ED124571FBF002200B2 /* UserInterface.cpp */,
+				1C004ED224571FBF002200B2 /* UserInterface.h */,
+				1C004EA82455A40E002200B2 /* Repository.h */,
+				1C004ECA24571F0F002200B2 /* Administrator.h */,
+				1C004ECB24571F0F002200B2 /* CMakeLists.txt */,
+				1C004ECD24571F0F002200B2 /* Film.h */,
 				1C004E9D2451E514002200B2 /* main.cpp */,
+				1C004EC824571F0F002200B2 /* Administrator.cpp */,
+				1C004EA42451E5A2002200B2 /* User.cpp */,
+				1C004EA52451E5A2002200B2 /* User.hpp */,
 			);
 			path = lab5_oop;
 			sourceTree = "<group>";
@@ -119,6 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C004ECE24571F0F002200B2 /* Administrator.cpp in Sources */,
+				1C004ED524571FBF002200B2 /* UserInterface.cpp in Sources */,
+				1C004ED424571FBF002200B2 /* Tests.cpp in Sources */,
+				1C004EA62451E5A2002200B2 /* User.cpp in Sources */,
 				1C004E9E2451E514002200B2 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
