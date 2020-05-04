@@ -6,41 +6,25 @@
 //  Copyright © 2020 Ghirisan Sebastian. All rights reserved.
 //
 
-#ifndef Repository_h
-#define Repository_h
-
+#ifndef LABB5_REPOSITORY_H
+#define LABB5_REPOSITORY_H
 #include "Film.h"
 #include <vector>
-/**
- * Repository
- */
-class Repository {
-    vector<Film> filme{Film("T1", "sadic", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
-                       Film("T2", "action", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
-                       Film("T3", "comedy", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
-                       Film("T4", "action", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
-                       Film("T5", "action", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
-                       Film("T7", "action", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
-                       Film("T8", "action", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
-                       Film("T6", "action", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
-                       Film("T9", "action", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
-                       Film("T10", "action", 1970, 100, "https://www.google.com/search?q=made_by_felix%26corina&oq=made_by_felix%26corina&aqs=chrome..69i57.13080j0j4&sourceid=chrome&ie=UTF-8"),
 
+class repository {
+    vector<film> filme{film("Hobbit1", "adventure", 2012,42000, "https://www.youtube.com/watch?v=JTSoD4BBCJc"),
+                       film("Hobbit2", "adventure", 2013, 23000, "https://www.youtube.com/watch?v=fnaojlfdUbs"),
+                       film("Hobbit3", "adventure", 2014, 3800, "https://www.youtube.com/watch?v=iVAgTiBrrDA"),
+                       film("The Notebook", "romance", 2005, 14000, "https://www.youtube.com/watch?v=yDJIcYE32NU"),
+                       film("Hannibal", "thriller", 2001, 10000, "https://www.youtube.com/watch?v=eHSYth2wSEk"),
+                       film("Thor", "action", 2011, 30000, "https://www.youtube.com/watch?v=JOddp-nlNvQ"),
+                       film("Southpaw", "drama", 2015, 90000, "https://www.youtube.com/watch?v=Mh2ebPxhoLs")
     };
 public:
-    int size()
-    { return filme.size();};
-    /**
-     * IS FRIEND OF REPOSITORY.....MEANWHILE....REPOSITORY IS NOT A FRIEND OF ADMINISTRATOR :(
-     */
+    int size(){ return filme.size();};
+
     friend class Administrator;
-    /**
-     * ....NEITHER IS BENUTZER.... :((((
-     */
+
     friend class User;
 };
-
-
-
-
-#endif /* Repository_h */
+#endif //LABB5_REPOSITORY_H
